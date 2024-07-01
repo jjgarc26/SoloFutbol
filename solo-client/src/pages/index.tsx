@@ -1,21 +1,19 @@
 "use client";
-import { useRouter, usePathname } from "next/navigation";
-export default function LandingPage() {
-  const router = useRouter();
-  const pathName = usePathname();
-  function onLoginClick() {
-    router.push("/Login");
+import { Inter } from "next/font/google";
+import { useRouter } from "next/navigation";
 
-    //route to login page
+const inter = Inter({ subsets: ["latin"] });
+
+export default function Home() {
+  const router = useRouter();
+  function onLoginClick() {
+    router.push("/login");
   }
-  function onSignUpClick() {
-    router.push("/SignUp");
-    // route to sign up page
-  }
+  function onSignUpClick() {}
+
   return (
     <div className="border-2 border-rose-500 flex flex-col space-y-2">
       <div>
-        <p>{pathName}</p>
         <h1 className="text-3xl font-bold">Landing page</h1>
       </div>
       <div className="flex flex-row space-x-4">
