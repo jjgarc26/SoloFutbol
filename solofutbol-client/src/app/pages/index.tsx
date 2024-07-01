@@ -1,8 +1,9 @@
 "use client";
 import { useRouter, usePathname } from "next/navigation";
-export default function LandingPage() {
-  const router = useRouter();
+
+export default function Page() {
   const pathName = usePathname();
+  const router = useRouter();
   function onLoginClick() {
     router.push("/Login");
 
@@ -10,6 +11,10 @@ export default function LandingPage() {
   }
   function onSignUpClick() {
     router.push("/SignUp");
+    // route to sign up page
+  }
+  function onAboutClick() {
+    router.push("/about/about");
     // route to sign up page
   }
   return (
@@ -24,6 +29,9 @@ export default function LandingPage() {
         </button>
         <button className="border-2" onClick={onSignUpClick}>
           Sign up
+        </button>
+        <button className="border-2" onClick={onAboutClick}>
+          About
         </button>
       </div>
     </div>
