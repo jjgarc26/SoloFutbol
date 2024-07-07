@@ -1,4 +1,5 @@
 .card {
   @apply border-2 border-purple-300;
   @apply flex flex-row min-h-screen justify-center items-center;
+  @apply mx-20 my-20;
 }

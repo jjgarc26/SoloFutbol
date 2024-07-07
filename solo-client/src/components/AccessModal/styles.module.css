@@ -1,0 +1,4 @@
+.header {
+  @apply text-3xl font-bold;
+  @apply justify-center items-center;
+}
