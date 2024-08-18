@@ -7,9 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const router = useRouter();
+  function onLoginClick() {
+    router.push("accounts/login");
+  }
   return (
     <div className="border-2 border-rose-500 flex flex-col space-y-2">
-      <AccessModal />
+      <button onClick={onLoginClick}>Get started!</button>
     </div>
   );
 }
