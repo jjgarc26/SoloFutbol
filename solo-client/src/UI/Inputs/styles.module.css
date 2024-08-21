@@ -1,0 +1,9 @@
+.inputComponent {
+  @apply flex flex-col;
+}
+.input {
+  @apply basis-1;
+}
+.label {
+  @apply basis-1;
+}

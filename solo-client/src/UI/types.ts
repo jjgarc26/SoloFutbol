@@ -4,3 +4,7 @@ export type InputInfo = {
   type: string;
   onChange: any;
 };
+export type ButtonInfo = {
+  buttonName: string;
+  onClick: any;
+};

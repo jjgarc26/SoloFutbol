@@ -1,0 +1,5 @@
+.button {
+  @apply bg-blue-600;
+  @apply px-10;
+  @apply flex flex-col;
+}

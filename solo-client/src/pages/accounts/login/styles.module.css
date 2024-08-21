@@ -1,0 +1,9 @@
+.login {
+  @apply flex flex-col;
+  @apply border-2;
+  @apply px-20;
+  @apply py-20;
+}
+.loginInput {
+  @apply py-2;
+}
