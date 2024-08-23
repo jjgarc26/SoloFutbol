@@ -1,9 +1,23 @@
+.form {
+  @apply flex flex-col;
+}
 .login {
   @apply flex flex-col;
   @apply border-2;
   @apply px-20;
-  @apply py-20;
+  @apply pt-20;
+  @apply pb-5;
 }
 .loginInput {
-  @apply py-2;
+  @apply pb-5;
+}
+.heading1 {
+  @apply py-5;
+}
+.signUp {
+  @apply flex flex-col;
+  @apply px-20;
+  @apply pt-0;
+  @apply pb-10;
+  @apply border-2;
 }
