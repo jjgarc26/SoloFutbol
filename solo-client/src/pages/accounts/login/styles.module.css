@@ -1,6 +1,3 @@
-.form {
-  @apply flex flex-col;
-}
 .login {
   @apply flex flex-col;
   @apply border-2;

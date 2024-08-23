@@ -5,6 +5,8 @@ import { useState } from "react";
 import Input from "@/UI/Inputs/Input";
 import style from "./styles.module.css";
 import Button from "@/UI/Button/Button";
+import FormLayout from "@/UI/Form/FormLayout/FormLayout";
+import FormInput from "@/UI/Form/FormInput/FormInput";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -22,31 +24,27 @@ function Login() {
 
   return (
     <Card>
-      <div className={style.form}>
+      <FormLayout>
         <div className={style.login}>
-          <div className={style.loginInput}>
-            <Input
-              labelName="Username"
-              placeHolder="Username"
-              type="text"
-              onChange={setUserName}
-            />
-          </div>
-          <div className={style.loginInput}>
-            <Input
-              labelName="Password"
-              placeHolder="Password"
-              type="password"
-              onChange={setPassword}
-            />
-          </div>
+          <FormInput
+            labelName="Username"
+            placeHolder="Username"
+            type="text"
+            onChange={setUserName}
+          />
+          <FormInput
+            labelName="Password"
+            placeHolder="Password"
+            type="password"
+            onChange={setPassword}
+          />
           <Button buttonName="Login" onClick={onLogin} />
         </div>
         <div className={style.signUp}>
           <h1 className={style.heading1}>--- Need an account? ---</h1>
           <Button buttonName="Sign up" onClick={onSignUpClick} />
         </div>
-      </div>
+      </FormLayout>
     </Card>
   );
 }

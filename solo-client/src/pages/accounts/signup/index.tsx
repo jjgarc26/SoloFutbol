@@ -4,6 +4,7 @@ import Card from "@/UI/Card/Card";
 import Input from "@/UI/Inputs/Input";
 import { useState } from "react";
 import Button from "@/UI/Button/Button";
+import FormLayout from "@/UI/Form/FormLayout/FormLayout";
 function signUp() {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -18,7 +19,7 @@ function signUp() {
   }
   return (
     <Card>
-      <div>
+      <FormLayout>
         <div>
           <div>
             <Input
@@ -58,7 +59,7 @@ function signUp() {
           <h1>--- Have an account already? ---</h1>
           <Button buttonName="Login" onClick={onLoginClick}></Button>
         </div>
-      </div>
+      </FormLayout>
     </Card>
   );
 }
