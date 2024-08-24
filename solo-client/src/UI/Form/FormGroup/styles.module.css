@@ -1,0 +1,7 @@
+.formGroup {
+  @apply flex flex-col;
+  @apply border-2;
+  @apply px-20;
+  @apply pt-20;
+  @apply pb-5;
+}

@@ -2,11 +2,11 @@
 import { useRouter } from "next/navigation";
 import Card from "@/UI/Card/Card";
 import { useState } from "react";
-import Input from "@/UI/Inputs/Input";
 import style from "./styles.module.css";
 import Button from "@/UI/Button/Button";
 import FormLayout from "@/UI/Form/FormLayout/FormLayout";
 import FormInput from "@/UI/Form/FormInput/FormInput";
+import FormGroup from "@/UI/Form/FormGroup/FormGroup";
 
 function Login() {
   const [userName, setUserName] = useState("");
@@ -25,7 +25,7 @@ function Login() {
   return (
     <Card>
       <FormLayout>
-        <div className={style.login}>
+        <FormGroup>
           <FormInput
             labelName="Username"
             placeHolder="Username"
@@ -39,7 +39,7 @@ function Login() {
             onChange={setPassword}
           />
           <Button buttonName="Login" onClick={onLogin} />
-        </div>
+        </FormGroup>
         <div className={style.signUp}>
           <h1 className={style.heading1}>--- Need an account? ---</h1>
           <Button buttonName="Sign up" onClick={onSignUpClick} />

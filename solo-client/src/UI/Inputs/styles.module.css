@@ -3,6 +3,7 @@
 }
 .input {
   @apply basis-1;
+  @apply text-black;
 }
 .label {
   @apply basis-1;

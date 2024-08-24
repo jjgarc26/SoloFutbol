@@ -1,3 +1,4 @@
+"use client";
 import Input from "@/UI/Inputs/Input";
 import { InputInfo } from "@/UI/types";
 import styles from "./styles.module.css";
